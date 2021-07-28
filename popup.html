@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Madi's Launcher</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+        
+        <style>
+            html, body{
+                font-family: 'Open Sans', sans-serif;
+                font-size: 14px;
+                margin: 0;
+                min-height: 180px;
+                padding: 0;
+                width: 384px;
+            }
+
+            h1{
+                font-family: 'Menlo', monospace;
+                font-size: 22px;
+                font-weight: 400;
+                margin: 0;
+                color: aqua;
+            }
+
+            a:link, a:visited{
+                color: #000;
+                outline: 0;
+                text-decoration: none;
+            }
+
+            img{
+                width: 30px;
+            }
+
+            .modal-header{
+                align-items: center;
+                border-bottom: 0.5px solid #dadada;
+            }
+
+            .modal-content{
+                padding: 0 22px;
+
+            }
+
+            .modal-icons{
+                border-top: 0.5px solid #dadada;
+                height: 50px;
+                width: 100%;
+            }
+
+            .logo{
+                padding: 16px;
+            }
+
+            .logo-icon{
+                vertical-align: text-bottom;
+                margin-right: 12px;
+            }
+
+            .version{
+                color: #444;
+                font-size: 18px;
+            }
+
+            .flex-container{
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 22px;
+            }
+
+            .flex{
+                opacity: 1;
+                transition: opacity 0.2s ease-in-out;
+                width: 120px;
+            }
+
+            .flex:hover{
+                opacity: 0.4;
+            }
+
+            .flex {
+                font-size: 40px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="modal-header">
+            <h1 class="logo">
+                <img src="images/icon150.png" alt="logo" class="logo-icon">Madi's Launcher <span class="version">(1.0.0)</span>
+            </h1>
+        </div>
+        <div class="modal-content">
+            <p>Easily access my most frequented websites.</p>
+        </div>
+        <div class="modal-icons">
+            <div class="flex-container">
+                <div class="flex">
+                    <button id="button">
+                        <a id= "website" href="https://mahathicodes.github.io/website/" target="_blank">
+                            <img src="images/globe.svg">
+                        </a>
+                    </button>
+                </div>
+                <div class="flex">
+                    <button id="button1">
+                        <a id="youtube" href="https://www.youtube.com" target="_blank">
+                            <img src="images/youtube.svg">
+                        </a>
+                    </button>
+                </div>
+                <div class="flex">
+                    <button id="button2">
+                        <a id="twitter" href="https://twitter.com/home?lang=en" target="_blank">
+                            <img src="images/twitter.svg">
+                        </a>
+                    </button>
+                </div>
+                <div class="flex">
+                    <button id="button3">
+                        <a id="linkedin" href="https://www.linkedin.com/in/mahathi-gandhamaneni-b904771bb/" target="_blank">
+                            <img src="images/linkedin.svg">
+                        </a>
+                    </button>
+                </div>
+                <div class="flex">
+                    <button id="button4">
+                        <a id="github" href="https://github.com/mahathicodes" target="_blank">
+                            <img src="images/github.svg">
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script src="popup.js">
+            // document.addEventListener("contextmenu", changeLink())
+            
+        </script>
+        
+    </body>
+</html>
